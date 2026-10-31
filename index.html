@@ -73,6 +73,36 @@ body *{visibility:hidden!important}
 #certificate{position:absolute;left:0;top:0;margin:0;box-shadow:none}
 @page{size:A4 landscape;margin:0}
 }
+
+.disclaimer-box {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px 24px;
+  background: #fffaf0;
+  border: 1px solid #c9b27c;
+  border-left: 5px solid #8b6b2f;
+  border-radius: 12px;
+  color: #3d3325;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.disclaimer-box h3 {
+  margin: 0 0 10px;
+  font-family: Georgia, serif;
+  color: #5b431d;
+}
+
+.disclaimer-box p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.disclaimer-note {
+  border-top: 1px solid #d8c89e;
+  padding-top: 10px;
+}
+  
 </style>
 </head>
 <body>
@@ -375,5 +405,28 @@ window.addEventListener("focus",updateEligibility);
 updateCategoryInfo();
 setInterval(updateEligibility,1000);
 </script>
+
+
+  <!-- Disclaimer -->
+<section class="disclaimer-box">
+  <h3>Disclaimer</h3>
+  <p>
+    This website and all certificates generated through it are provided
+    <strong>for entertainment and personal-use purposes only.</strong>
+  </p>
+  <p>
+    The generated certificate is not an official document and does not
+    represent or verify any government, educational, employment, legal,
+    medical, or institutional status.
+  </p>
+  <p>
+    This website is an independent project and is not affiliated with,
+    endorsed by, or officially connected to any organization unless
+    explicitly stated.
+  </p>
+  <p class="disclaimer-note">
+    <strong>Entertainment Only — Not an Official Certificate.</strong>
+  </p>
+</section>
 </body>
 </html>
